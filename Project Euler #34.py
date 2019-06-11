@@ -8,9 +8,9 @@ def Digit_factorials_3digits(x, upper_bound):
     while int(x) < upper_bound:
         if str(x) == str(Digit_Factorials[int(x[0])-1]+Digit_Factorials[int(x[1])-1]):
             Digit_Factorials.append(x)
+            x = str(int(x) +1)
         else:
-            x = int(x) + 1
-        x = str(x)
+            x = str(int(x)+1)
         if x[2] == "7":
             x = str(int(x)+4)
         if x[1] == "7":
