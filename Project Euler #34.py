@@ -18,6 +18,23 @@ def Digit_factorials_3digits(x, upper_bound):
             x = str(int(x)+40)
 
 Digit_factorials_3digits(str(100), 600)
+
+def Digit_factorials_4digits(x, upper_bound):
+    while int(x) < upper_bound:
+        if str(x) == str(int(Factorials[int(x[0])])+int(Factorials[int(x[1])])+int(Factorials[int(x[2])])+int(Factorials[int(x[3])])):
+            Digit_Factorials.append(int(x))
+            x = str(int(x) +1)
+        else:
+            x = str(int(x)+1)
+        if x[2] == "8":
+            x = str(int(x)+30)
+        if x[1] == "8":
+            x = str(int(x)+300)
+        if x[3] == "8":
+            x = str(int(x)+3)
+          
+Digit_factorials_4digits(str(1000), 7201)
+
 print((Digit_Factorials))
 end = time.time()
 print(end - start)
