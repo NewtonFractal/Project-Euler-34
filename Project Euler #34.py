@@ -54,7 +54,7 @@ def Digit_factorials_5digits(x, upper_bound):
                     x = str(int(x)+1000)
 
 
-Digit_factorials_5digits(str(10000), 95760)
+Digit_factorials_5digits(str(10000), 50000)
 
 print(Digit_Factorials)
 end = time.time()
