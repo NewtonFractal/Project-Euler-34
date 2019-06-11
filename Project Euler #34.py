@@ -20,6 +20,6 @@ def Digit_factorials(lower_bound,upper_bound):
                     break
 
 Digit_factorials(144,2540160)
-
+print(sum(Digit_Factorials))
 end = time.time()
 print(end - start)
