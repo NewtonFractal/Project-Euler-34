@@ -12,11 +12,11 @@ def Digit_factorials_3digits(x, upper_bound):
             Digit_Factorials.append(int(x))
             x = str(int(x) + 1)
         else:
-            x = str(int(x) + 1)
+            x = str(int(x)+1)
         if x[2] == "7":
-            x = str(int(x) + 4)
+            x = str(int(x)+3)
         if x[1] == "7":
-            x = str(int(x) + 40)
+            x = str(int(x)+30)
 
 
 Digit_factorials_3digits(str(100), 600)
@@ -29,13 +29,13 @@ def Digit_factorials_4digits(x, upper_bound):
             Digit_Factorials.append(int(x))
             x = str(int(x) + 1)
         else:
-            x = str(int(x) + 1)
+            x = str(int(x)+1)
         if x[2] == "8":
-            x = str(int(x) + 30)
+            x = str(int(x)+20)
         if x[1] == "8":
-            x = str(int(x) + 300)
+            x = str(int(x)+200)
         if x[3] == "8":
-            x = str(int(x) + 3)
+            x = str(int(x)+2)
 
 Digit_factorials_4digits(str(1000), 7201)
 
@@ -46,14 +46,16 @@ def Digit_factorials_5digits(x, upper_bound):
             x = str(int(x) + 1)
         else:
             x = str(int(x)+1)
-        if x[2] == "9":
-            x = str(int(x)+200)
         if x[3] == "9":
-            x = str(int(x)+20)
+            x = str(int(x)+10)
+            if x[2] == "9":
+                x = str(int(x)+100)
+                if x[1] == "9":
+                    x = str(int(x)+1000)
 
 
 Digit_factorials_5digits(str(10000), 95760)
 
-print((sum(Digit_Factorials)))
+print(Digit_Factorials)
 end = time.time()
 print(end - start)
