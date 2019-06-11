@@ -1,3 +1,5 @@
+#since 10^n grows much faster than n*9!
+#d(n*9!)/dn is a constant (9!) while d(10^n)/dn = (10^n)*ln(10)
 import time
 import math
 
