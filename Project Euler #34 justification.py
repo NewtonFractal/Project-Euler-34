@@ -1,5 +1,6 @@
 #since 10^n grows much faster than n*9!
 #d(n*9!)/dn is a constant (9!) while d(10^n)/dn = (10^n)*ln(10)
+#there are clearly no sinlge or double digit factorials apart from 1 and 2 since since 3! neq 6  and 4! > 9.
 import time
 import math
 
