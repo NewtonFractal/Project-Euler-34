@@ -6,7 +6,7 @@ start = time.time()
 
 def Digit_factorials_3digits(x, upper_bound):
     while int(x) < upper_bound:
-        if str(x) == str(Digit_Factorials[int(x[0])-1]+Digit_Factorials[int(x[1])-1]):
+        if str(x) == str(int(Digit_Factorials[int(x[0])-1])+int(Digit_Factorials[int(x[1])-1])+int(Digit_Factorials[int(x[2])-1])):
             Digit_Factorials.append(x)
             x = str(int(x) +1)
         else:
