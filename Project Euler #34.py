@@ -41,24 +41,19 @@ Digit_factorials_4digits(str(1000), 7201)
 
 def Digit_factorials_5digits(x, upper_bound):
     while int(x) < upper_bound:
-        if str(x) == str(int(Factorials[int(x[0])]) + int(Factorials[int(x[1])]) + int(Factorials[int(x[2])]) + int(
-                Factorials[int(x[3])])+int(Factorials[int(x[4])])):
+        if str(x) == str(int(Factorials[int(x[0])]) + int(Factorials[int(x[1])]) + int(Factorials[int(x[2])]) + int(Factorials[int(x[3])])+int(Factorials[int(x[4])])):
             Digit_Factorials.append(int(x))
             x = str(int(x) + 1)
         else:
             x = str(int(x)+1)
         if x[2] == "9":
-            x = str(int(x) + 200)
-        if x[1] == "9":
-            x = str(int(x) + 2000)
+            x = str(int(x)+200)
         if x[3] == "9":
-            x = str(int(x) + 20)
-        if x[4] == "9":
-            x = str(int(x)+2)
+            x = str(int(x)+20)
+
 
 Digit_factorials_5digits(str(10000), 95760)
 
-
-print((Digit_Factorials))
+print((sum(Digit_Factorials)))
 end = time.time()
 print(end - start)
