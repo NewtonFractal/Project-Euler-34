@@ -1,13 +1,14 @@
+
 import time
 import math
-Factorials = []
-Digit_Factorials = [1,1,2,6,24,120,720]
+Factorials = [1,1,2,6,24,120,720]
+Digit_Factorials = []
 start = time.time()
 
 def Digit_factorials_3digits(x, upper_bound):
     while int(x) < upper_bound:
-        if str(x) == str(int(Digit_Factorials[int(x[0])-1])+int(Digit_Factorials[int(x[1])-1])+int(Digit_Factorials[int(x[2])-1])):
-            Digit_Factorials.append(x)
+        if str(x) == str(int(Factorials[int(x[0])])+int(Factorials[int(x[1])])+int(Factorials[int(x[2])])):
+            Digit_Factorials.append(int(x))
             x = str(int(x) +1)
         else:
             x = str(int(x)+1)
