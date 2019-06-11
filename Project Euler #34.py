@@ -1,7 +1,7 @@
 
 import time
 import math
-Factorials = [1,1,2,6,24,120,720]
+Factorials = [1,1,2,6,24,120,720,5040,40320,362880]
 Digit_Factorials = []
 start = time.time()
 
