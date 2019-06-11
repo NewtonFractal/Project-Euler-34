@@ -16,7 +16,7 @@ print(len(str(x)))
 print(len(str(y)))
 print(x)
 print(y)
-print(8*math.factorial(9))
+print(7*math.factorial(9))
 
 end = time.time()
 print(end - start)
