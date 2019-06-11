@@ -17,7 +17,7 @@ def Digit_factorials(lower_bound,upper_bound):
                 if y + z == x:
                     Digit_Factorials.append(x)
 
-Digit_factorials(144,2903040)
+Digit_factorials(144,2540160)
 
 end = time.time()
 print(end - start)
